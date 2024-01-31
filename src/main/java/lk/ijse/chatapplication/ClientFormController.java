@@ -11,6 +11,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
@@ -84,22 +85,8 @@ public class ClientFormController extends Thread{
                     HBox hBox = new HBox(10);
                     hBox.setAlignment(Pos.BOTTOM_RIGHT);
 
-                    if (!cmd.equalsIgnoreCase(lblClientName.getText())) {
-                        vBox.setAlignment(Pos.TOP_LEFT);
-                        hBox.setAlignment(Pos.CENTER_LEFT);
 
-                        Text text1 = new Text("  " + cmd + " :");
-                        hBox.getChildren().add(text1);
-                        hBox.getChildren().add(imageView);
-                        hBox.setStyle("-fx-alignment: center-left;-fx-fill-height: true;-fx-min-height: 50;-fx-pref-width: 520;-fx-max-width: 520;-fx-padding: 10");
 
-                    } else {
-                        hBox.setAlignment(Pos.BOTTOM_RIGHT);
-                        hBox.getChildren().add(imageView);
-                        Text text1 = new Text(": Me ");
-                        hBox.getChildren().add(text1);
-                        hBox.setStyle("-fx-alignment: center-right;-fx-fill-height: true;-fx-min-height: 50;-fx-pref-width: 520;-fx-max-width: 520;-fx-padding: 10");
-                    }
 
                     Platform.runLater(() -> vBox.getChildren().addAll(hBox));
 
@@ -120,20 +107,23 @@ public class ClientFormController extends Thread{
 
                     HBox hBox = new HBox(12); //12
 
+
                     if (!cmd.equalsIgnoreCase(lblClientName.getText() + ":")) {
                         vBox.setAlignment(Pos.TOP_LEFT);
                         hBox.setAlignment(Pos.CENTER_LEFT);
                         hBox.setStyle("-fx-alignment: center-left;-fx-fill-height: true;-fx-min-height: 50;-fx-pref-width: 520;-fx-max-width: 520;-fx-padding: 10");
-                        flow.setStyle("-fx-background-color:   white;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: black;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
+                        flow.setStyle("-fx-background-color:   #4d426d;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: #ffffff;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
                         hBox.getChildren().add(flow);
                     } else {
                         Text text2 = new Text(fullMsg + ": Me");
+                        text2.setFill(Color.WHITE); // Set text color to white
                         TextFlow flow2 = new TextFlow(text2);
                         hBox.setAlignment(Pos.BOTTOM_RIGHT);
                         hBox.setStyle("-fx-alignment: center-right;-fx-fill-height: true;-fx-min-height: 50;-fx-pref-width: 520;-fx-max-width: 520;-fx-padding: 10");
-                        flow2.setStyle("-fx-background-color:  #CCFF9A;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: white;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
+                        flow2.setStyle("-fx-background-color:  #efa985;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: white;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
                         hBox.getChildren().add(flow2);
                     }
+
                     Platform.runLater(() -> vBox.getChildren().addAll(hBox));
                 }
             }
