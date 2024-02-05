@@ -37,15 +37,21 @@ public class AddNewUserFormController extends Application {
     }
 
     public void btnAddOnAction(ActionEvent actionEvent) throws IOException {
-        username = txtUsername.getText();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ClientForm.fxml"))));
-        stage.setTitle(txtUsername.getText() + "'s Chat");
-        savepassword();
-        stage.show();
-        txtUsername.clear();
-        password.clear();
+        if(txtUsername==null || password == null) {
+            new Alert(Alert.AlertType.ERROR, "User Name Reqired !").show();
+        }else {
+            username = txtUsername.getText();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ClientForm.fxml"))));
+            stage.setTitle(txtUsername.getText() + "'s Chat");
+            savepassword();
+            stage.show();
+            txtUsername.clear();
+            password.clear();
+        }
+
     }
+
     public void savepassword(){
          String pw = password.getText();
          String username1 = txtUsername.getText();
@@ -56,11 +62,11 @@ public class AddNewUserFormController extends Application {
             boolean isSaved = userModel.saveUser(dto);
 
             if (isSaved) {
-                new Alert(Alert.AlertType.CONFIRMATION, "User saved!").show();
+               // new Alert(Alert.AlertType.CONFIRMATION, "User saved!").show();
 
             }
         } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+           //new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
     }
 }
