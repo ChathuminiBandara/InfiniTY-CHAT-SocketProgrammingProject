@@ -42,7 +42,7 @@ public class AddNewUserFormController extends Application {
         }else {
             username = txtUsername.getText();
             Stage stage = new Stage();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ClientForm.fxml"))));
+             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ClientForm.fxml"))));
             stage.setTitle(txtUsername.getText() + "'s Chat");
             savepassword();
             stage.show();

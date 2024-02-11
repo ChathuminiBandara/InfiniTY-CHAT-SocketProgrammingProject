@@ -9,11 +9,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="751.0" prefWidth="814.0" style="-fx-background-color: #4d426d; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatapplication.ClientFormController">
    <children>
+      <Pane layoutX="22.0" layoutY="387.0" prefHeight="338.0" prefWidth="328.0" style="-fx-background-color: #5c4f82; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="77.0" layoutX="214.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Circle fill="WHITE" layoutX="253.0" layoutY="40.0" opacity="0.95" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="253.0" layoutY="121.0" opacity="0.95" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="253.0" layoutY="197.0" opacity="0.95" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="253.0" layoutY="281.0" opacity="0.95" radius="32.0" stroke="WHITE" strokeType="INSIDE" />
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="230.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-cat.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="231.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-crab.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="231.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-loch-ness-monster.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="231.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-unicorn.gif" />
+               </image>
+            </ImageView>
+         </children></Pane>
       <Pane layoutX="597.0" layoutY="82.0" opacity="0.22" prefHeight="36.0" prefWidth="108.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
       <Pane layoutX="385.0" layoutY="129.0" prefHeight="586.0" prefWidth="411.0" style="-fx-background-color: #5c4f82; -fx-background-radius: 20;" />
       <ScrollPane fx:id="scrollPane" layoutX="392.0" layoutY="150.0" prefHeight="488.0" prefWidth="399.0" style="-fx-background-color: #4d426d; -fx-background-radius: 20;">
@@ -45,7 +73,6 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3cc6b7" height="47.0" layoutX="14.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
       <Label layoutX="87.0" layoutY="14.0" prefHeight="28.0" prefWidth="139.0" text="Chat Infinity" textFill="WHITE">
          <font>
             <Font name="Ebrima Bold" size="22.0" />
@@ -99,41 +126,50 @@
             <Label layoutX="74.0" layoutY="36.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="You: Fine Then⭐" textFill="WHITE" />
             <Label layoutX="71.0" layoutY="110.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="Ian:  waiting then &lt;3" textFill="WHITE" />
             <Label layoutX="74.0" layoutY="180.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="jake : when lol🙌" textFill="WHITE" />
-            <Label fx:id="lblClientName1" layoutX="75.0" layoutY="268.0" prefHeight="23.0" prefWidth="118.0" text="WhatsApp" textFill="WHITE">
+            <Label layoutX="37.0" layoutY="268.0" prefHeight="23.0" prefWidth="118.0" text="IAN" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Pane layoutX="16.0" layoutY="329.0" opacity="0.09" prefHeight="2.0" prefWidth="300.0" style="-fx-background-color: white;" />
+            <Pane layoutX="16.0" layoutY="324.0" opacity="0.09" prefHeight="2.0" prefWidth="300.0" style="-fx-background-color: white;" />
             <Pane layoutX="16.0" layoutY="400.0" opacity="0.09" prefHeight="2.0" prefWidth="300.0" style="-fx-background-color: white;" />
-            <Label layoutX="71.0" layoutY="341.0" prefHeight="23.0" prefWidth="118.0" text="Ian Star" textFill="WHITE">
+            <Label layoutX="33.0" layoutY="341.0" prefHeight="23.0" prefWidth="118.0" text="Ian Star" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="75.0" layoutY="412.0" prefHeight="23.0" prefWidth="118.0" text="Jake" textFill="WHITE">
+            <Label layoutX="37.0" layoutY="412.0" prefHeight="23.0" prefWidth="118.0" text="Jake" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="75.0" layoutY="288.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="You: Fine Then⭐" textFill="WHITE" />
-            <Label layoutX="72.0" layoutY="362.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="Ian:  waiting then &lt;3" textFill="WHITE" />
-            <Label layoutX="75.0" layoutY="432.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="jake : when lol🙌" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="288.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="2 mins Ago" textFill="WHITE" />
+            <Label layoutX="34.0" layoutY="362.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="12 mins Ago" textFill="WHITE" />
+            <Label layoutX="37.0" layoutY="432.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="20 mins Ago" textFill="WHITE" />
+            <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-female-profile-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="11.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-female-profile-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="11.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/icons8-female-profile-100.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="16.0" layoutY="479.0" opacity="0.09" prefHeight="2.0" prefWidth="300.0" style="-fx-background-color: white;" />
+            <Label layoutX="37.0" layoutY="498.0" prefHeight="23.0" prefWidth="118.0" text="Moah" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="518.0" opacity="0.76" prefHeight="23.0" prefWidth="139.0" text="jake : wh29 mins Agon lol🙌" textFill="WHITE" />
          </children>
       </Pane>
-      <Pane layoutX="22.0" layoutY="387.0" prefHeight="338.0" prefWidth="328.0" style="-fx-background-color: #5c4f82; -fx-background-radius: 20;">
-         <children>
-            <ImageView fitHeight="122.0" fitWidth="139.0" layoutX="175.0" layoutY="24.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../icons/INFINITY%20CHAT.gif" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="149.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../Downloads/INFINITY%20CHATttt.gif" />
-               </image>
-            </ImageView>
-         </children></Pane>
       <Label layoutX="352.0" layoutY="22.0" text="HOME" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -181,5 +217,10 @@
       </ImageView>
       <Pane layoutX="714.0" layoutY="82.0" opacity="0.22" prefHeight="36.0" prefWidth="71.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
       <Pane layoutX="-255.0" layoutY="446.0" opacity="0.2" prefHeight="122.0" prefWidth="118.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+      <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="29.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/icons8-infinity-100.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
